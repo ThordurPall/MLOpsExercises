@@ -9,7 +9,7 @@ import pytest
 class TestTraining:
 
     @pytest.mark.parametrize("epochs,lr", [(1, 0.01), (1, 0.1), (2, 0.001), (3, 0.001)])
-    def test_make_dataset(self, epochs, lr):
+    def test_training(self, epochs, lr):
         """
         Test that the training and test MNIST data
         has the correct dimensions
