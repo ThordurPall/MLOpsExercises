@@ -24,4 +24,4 @@ jobs:
         pip install isort
     - name: isort
       run: |
-        isort .
+        isort . --check
