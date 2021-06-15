@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-import click
 import logging
+
+import click
 from src.data.make_dataset import make_dataset
+
 
 @click.command()
 @click.argument('data_filepath',  type=click.Path(), default='data')

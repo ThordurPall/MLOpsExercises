@@ -1,14 +1,13 @@
-import sys
 import argparse
-
-import torch
-from torch import nn
-from torch import optim
-
-from data import mnist
-from model import Classifier
+import sys
 
 import matplotlib.pyplot as plt
+import torch
+from model import Classifier
+from torch import nn, optim
+
+from data import mnist
+
 
 class TrainOREvaluate(object):
     """

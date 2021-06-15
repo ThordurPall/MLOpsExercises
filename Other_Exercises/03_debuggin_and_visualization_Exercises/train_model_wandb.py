@@ -7,10 +7,10 @@ import click
 import matplotlib.pyplot as plt
 import torch
 import torchvision
+import wandb
 from classifier import Classifier
 from torch import nn, optim
 from torchvision import datasets, transforms
-import wandb
 
 
 @click.command()

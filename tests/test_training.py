@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-from src.models.train_model import train_model
-from src.data.make_dataset import make_dataset
-import torch
 import os.path
+
 import pytest
+import torch
+
+from src.data.make_dataset import make_dataset
+from src.models.train_model import train_model
 
 
 class TestTraining:

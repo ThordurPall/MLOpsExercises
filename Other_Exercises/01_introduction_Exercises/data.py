@@ -1,5 +1,6 @@
 from torchvision import datasets, transforms
 
+
 def mnist():
     """ Downloads and loads the MNIST training and test data """
     

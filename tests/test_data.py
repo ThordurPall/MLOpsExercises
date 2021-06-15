@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from src.data.make_dataset import make_dataset
 import torch
+
+from src.data.make_dataset import make_dataset
 
 
 class TestData:

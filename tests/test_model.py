@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-from src.models.classifier import Classifier
-import torch
 import pytest
+import torch
+
+from src.models.classifier import Classifier
 
 
 class TestModel:

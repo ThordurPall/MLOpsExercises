@@ -1,39 +1,37 @@
 # -*- coding: utf-8 -*-
 import logging
+import os
 import pickle
 from pathlib import Path
 
-import click
 import matplotlib.pyplot as plt
 import torch
-import torchvision
-from classifier import Classifier
+from azureml.core import Run
+from src.models.classifier import Classifier
 from torch import nn, optim
-from torch.utils.tensorboard import SummaryWriter
 from torchvision import datasets, transforms
 
 
-@click.command()
-@click.argument('data_filepath', type=click.Path(), default='data')
-@click.argument('trained_model_filepath', type=click.Path(),
-                default='models/trained_model.pth')
-@click.argument('training_statistics_filepath', type=click.Path(),
-                default='data/processed/')
-@click.argument('training_figures_filepath', type=click.Path(),
-                default='reports/figures/')
+def train_model(data_filepath, trained_model_filepath,
+                training_statistics_filepath, training_figures_filepath,
+                epochs, lr):
+    """ Trains the neural network using MNIST training data and
+        returns a dictionary with the training and validation 
+        losses and accuracies """
 
-def main(data_filepath, trained_model_filepath, training_statistics_filepath,
-         training_figures_filepath):
-    """ Trains the neural network using MNIST training data """
+    # Get the experiment run context. That is, retrieve the experiment
+    # run context when the script is run
+    run = Run.get_context()
+    run.log('Learning rate',  lr)
+
+    log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    logging.basicConfig(level=logging.INFO, format=log_fmt)
     logger = logging.getLogger(__name__)
     logger.info('Training a neural network using MNIST training data')
-    writer = SummaryWriter()
 
     # Create the network and define the loss function and optimizer
     model = Classifier()
     criterion = nn.NLLLoss()
-    lr=0.001
-    writer.add_hparams({'Learning_rate': lr})
     optimizer = optim.Adam(model.parameters(), lr=lr)
 
     # Define a transform to normalize the data
@@ -46,7 +44,6 @@ def main(data_filepath, trained_model_filepath, training_statistics_filepath,
     train_set = datasets.MNIST(project_dir.joinpath(data_filepath),
                                download=False, train=True,
                                transform=transform)
-    train_set_targets = train_set.targets.numpy()
     batch_size = 64
     train_n = int(0.7*len(train_set))
     val_n = len(train_set) - train_n
@@ -58,22 +55,7 @@ def main(data_filepath, trained_model_filepath, training_statistics_filepath,
     val_loader = torch.utils.data.DataLoader(val_set, batch_size=batch_size,
                                              shuffle=True)
 
-    # Plot example images
-    images, labels = iter(train_loader).next()
-    for i in range(6):
-        plt.subplot(2, 3, i+1)
-        plt.imshow(images[i][0], cmap='gray')
-    grid = torchvision.utils.make_grid(images)
-    writer.add_image('MNIST examples', grid, 0)
-
-    # Plot the data distribution of the MNIST training set
-    writer.add_histogram('MNIST data distribution', train_set_targets)
-
-    # Add graph data to summary
-    writer.add_graph(model, images)
-
     # Implement the training loop
-    epochs = 10
     train_losses, val_losses, train_accuracies, val_accuracies = [], [], [], []
     for e in range(epochs):
         train_loss = 0
@@ -116,7 +98,7 @@ def main(data_filepath, trained_model_filepath, training_statistics_filepath,
                     # Forward pass and compute loss
                     log_ps = model(images)
                     ps = torch.exp(log_ps)
-                    val_loss += criterion(log_ps, labels)
+                    val_loss += criterion(log_ps, labels).item()
 
                     # Keep track of how many are correctly classified
                     top_p, top_class = ps.topk(1, dim=1)
@@ -135,14 +117,11 @@ def main(data_filepath, trained_model_filepath, training_statistics_filepath,
                         str("Validation Loss: {:.3f}.. ".format(val_losses[-1]))         +
                         str("Validation Accuracy: {:.3f}.. ".format(val_accuracies[-1])))
 
-            # Write the training 
-            writer.add_scalar('Loss/train', train_loss/len(train_loader), e+1)
-            writer.add_scalar('Loss/validation', val_loss/len(val_loader), e+1)
-            writer.add_scalar('Accuracy/train', train_correct/len(train_set), e+1)
-            writer.add_scalar('Accuracy/validation', val_correct/len(val_set), e+1)
-
     # Save the trained network
-    torch.save(model.state_dict(), project_dir.joinpath(trained_model_filepath))
+    os.makedirs('./outputs', exist_ok=True)
+    model_path = './outputs/' + trained_model_filepath
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    torch.save(model.state_dict(), model_path)
 
     # Save the training and validation losses and accuracies as a dictionary
     train_val_dict = {
@@ -152,21 +131,30 @@ def main(data_filepath, trained_model_filepath, training_statistics_filepath,
         "val_accuracies": val_accuracies
     }
 
-    with open(project_dir.joinpath(training_statistics_filepath).joinpath('train_val_dict.pickle'), 'wb') as f:
+    os.makedirs(os.path.dirname('./outputs/' + training_statistics_filepath),
+                exist_ok=True)
+    with open('./outputs/' + training_statistics_filepath + 'train_val_dict.pickle', 'wb') as f:
         # Pickle the 'train_val_dict' dictionary using
         #  the highest protocol available
         pickle.dump(train_val_dict, f, pickle.HIGHEST_PROTOCOL)
 
+    # Log the training and validation losses and accuracies
+    run.log_list('Train loss', train_losses)
+    run.log_list('Train accuracy', train_accuracies)
+    run.log_list('Validation loss', val_losses)
+    run.log_list('Validation accuracy', val_accuracies)
+
     # Plot the training loss curve
+    figures_path = './outputs/' + training_figures_filepath
+    os.makedirs(figures_path, exist_ok=True)
     f = plt.figure(figsize=(12, 8))
     plt.plot(train_losses, label='Training loss')
     plt.plot(val_losses,   label='Validation loss')
     plt.xlabel('Epoch number')
     plt.ylabel('Loss')
     plt.legend()
-    plt.show()
-    f.savefig(project_dir.joinpath(training_figures_filepath).joinpath('Training_Loss.pdf'),
-              bbox_inches='tight')
+    run.log_image(name='Training loss curve', plot=f)
+    f.savefig(figures_path + 'Training_Loss.pdf', bbox_inches='tight')
 
     # Plot the training accuracy curve
     f = plt.figure(figsize=(12, 8))
@@ -175,13 +163,11 @@ def main(data_filepath, trained_model_filepath, training_statistics_filepath,
     plt.xlabel('Epoch number')
     plt.ylabel('Accuracy')
     plt.legend()
-    plt.show()
-    f.savefig(project_dir.joinpath(training_figures_filepath).joinpath('Training_Accuracy.pdf'),
-              bbox_inches='tight')
-    writer.close()
+    run.log_image(name='Training accuracy curve', plot=f)
+    f.savefig(figures_path + 'Training_Accuracy.pdf', bbox_inches='tight')
+    
+    # Complete the run
+    run.complete()
+    print('Completed running the training expriment')
 
-if __name__ == '__main__':
-    log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    logging.basicConfig(level=logging.INFO, format=log_fmt)
-    main()
-
+    return train_val_dict
