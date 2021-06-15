@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
-import click
 import logging
+
+import click
+
 from src.models.train_model_azure import train_model
+
 
 @click.command()
 @click.argument('data_filepath', type=click.Path(), default='data')

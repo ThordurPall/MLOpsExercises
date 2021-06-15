@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 
-from azureml.core import (Environment, Experiment, Model, ScriptRunConfig,
-                          Workspace, ComputeTarget)
+from azureml.core import (ComputeTarget, Environment, Experiment, Model,
+                          ScriptRunConfig, Workspace)
 from azureml.core.conda_dependencies import CondaDependencies
 
 

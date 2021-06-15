@@ -7,9 +7,10 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import torch
 from azureml.core import Run
-from src.models.classifier import Classifier
 from torch import nn, optim
 from torchvision import datasets, transforms
+
+from src.models.classifier import Classifier
 
 
 def train_model(data_filepath, trained_model_filepath,

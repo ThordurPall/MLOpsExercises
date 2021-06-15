@@ -2,14 +2,13 @@
 LFW dataloading
 """
 import argparse
-import time
-import matplotlib.pyplot as plt
-
-import numpy as np
 import os
-from PIL import Image
+import time
 
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
+from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 

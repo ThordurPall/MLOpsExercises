@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
+import argparse
 import logging
+import time
 from pathlib import Path
 
-import argparse
-import time
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
-import matplotlib.pyplot as plt
-
-from torchvision.datasets import FashionMNIST
 import torchvision.transforms as transforms
-from torch.utils.data import DataLoader
 from fashion_trainer import FashionCNN
+from torch.utils.data import DataLoader
+from torchvision.datasets import FashionMNIST
 
 
 def evaluate(batch_size=100):

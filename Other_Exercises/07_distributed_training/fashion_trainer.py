@@ -2,12 +2,12 @@
 Credit to: https://www.kaggle.com/pankajj/fashion-mnist-with-pytorch-93-accuracy
 """
 import os
+
 import torch
 import torch.nn as nn
-
-from torchvision.datasets import FashionMNIST
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
+from torchvision.datasets import FashionMNIST
 
 if torch.cuda.is_available():
     print("The code will run on GPU.")
