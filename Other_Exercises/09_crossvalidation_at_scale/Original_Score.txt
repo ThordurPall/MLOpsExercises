@@ -1,0 +1,893 @@
+Iteration: 0, Loss: 2.385003089904785, Accuracy: 29.200000762939453%
+Iteration: 500, Loss: 0.41431254148483276, Accuracy: 88.79000091552734%
+Iteration: 999, Loss: 0.2951373755931854, Accuracy: 92.41999816894531%
+Accuracy of T-shirt/Top: 97.80%
+Accuracy of Trouser: 98.70%
+Accuracy of Pullover: 98.20%
+Accuracy of Dress: 85.40%
+Accuracy of Coat: 74.60%
+Accuracy of Sandal: 97.90%
+Accuracy of Shirt: 67.10%
+Accuracy of Sneaker: 99.80%
+Accuracy of Bag: 98.80%
+Accuracy of Ankle Boot: 97.10%
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+(base) C:\Users\thord\OneDrive\DTU\Spring 2021\Machine Learning Operations\dtu_mlops-main\09_crossvalidation_at_scale>python fashion_trainer.py
+Using median pruning
+[I 2021-06-19 19:06:12,383] A new study created in memory with name: no-name-db764613-c21e-483d-9fd4-66b5d5647621
+A new study created in memory with name: no-name-db764613-c21e-483d-9fd4-66b5d5647621
+0.0028211329679608483
+Iteration: 0, Loss: 2.315747022628784, Accuracy: 38.25%
+Iteration: 309, Loss: 0.218629390001297, Accuracy: 87.70999908447266%
+Accuracy of T-shirt/Top: 64.20%
+Accuracy of Trouser: 98.10%
+Accuracy of Pullover: 92.80%
+Accuracy of Dress: 89.80%
+Accuracy of Coat: 76.00%
+Accuracy of Sandal: 97.90%
+Accuracy of Shirt: 62.20%
+Accuracy of Sneaker: 95.70%
+Accuracy of Bag: 98.70%
+Accuracy of Ankle Boot: 95.10%
+[I 2021-06-19 19:33:10,253] Trial 0 finished with value: 87.70999908447266 and parameters: {'lr': 0.0028211329679608483, 'n_out_sec_lasts': 291, 'dropout_p': 0.6093388141317805, 'batch_size': 328}. Best is trial 0 with value: 87.70999908447266.
+Trial 0 finished with value: 87.70999908447266 and parameters: {'lr': 0.0028211329679608483, 'n_out_sec_lasts': 291, 'dropout_p': 0.6093388141317805, 'batch_size': 328}. Best is trial 0 with value: 87.70999908447266.
+0.016023726441996906
+Iteration: 0, Loss: 2.369264841079712, Accuracy: 15.510000228881836%
+Iteration: 500, Loss: 0.4816431701183319, Accuracy: 83.80000305175781%
+Iteration: 569, Loss: 0.39557668566703796, Accuracy: 83.62000274658203%
+Accuracy of T-shirt/Top: 70.90%
+Accuracy of Trouser: 96.80%
+Accuracy of Pullover: 82.10%
+Accuracy of Dress: 86.00%
+Accuracy of Coat: 72.90%
+Accuracy of Sandal: 95.20%
+Accuracy of Shirt: 57.10%
+Accuracy of Sneaker: 93.60%
+Accuracy of Bag: 96.90%
+Accuracy of Ankle Boot: 96.10%
+[I 2021-06-19 19:36:53,078] Trial 1 finished with value: 83.62000274658203 and parameters: {'lr': 0.016023726441996906, 'n_out_sec_lasts': 271, 'dropout_p': 0.5136753053044121, 'batch_size': 176}. Best is trial 0 with value: 87.70999908447266.
+Trial 1 finished with value: 83.62000274658203 and parameters: {'lr': 0.016023726441996906, 'n_out_sec_lasts': 271, 'dropout_p': 0.5136753053044121, 'batch_size': 176}. Best is trial 0 with value: 87.70999908447266.
+0.47759875740593233
+Iteration: 0, Loss: 2.3810744285583496, Accuracy: 10.630000114440918%
+Iteration: 500, Loss: 75.50424194335938, Accuracy: 9.899999618530273%
+Iteration: 819, Loss: 44.634315490722656, Accuracy: 9.869999885559082%
+Accuracy of T-shirt/Top: 0.00%
+Accuracy of Trouser: 0.00%
+Accuracy of Pullover: 0.00%
+Accuracy of Dress: 0.00%
+Accuracy of Coat: 99.30%
+Accuracy of Sandal: 0.00%
+Accuracy of Shirt: 0.00%
+Accuracy of Sneaker: 0.00%
+Accuracy of Bag: 0.00%
+Accuracy of Ankle Boot: 1.30%
+[I 2021-06-19 19:40:59,740] Trial 2 finished with value: 9.869999885559082 and parameters: {'lr': 0.47759875740593233, 'n_out_sec_lasts': 181, 'dropout_p': 0.48195118179617225, 'batch_size': 123}. Best is trial 0 with value: 87.70999908447266.
+Trial 2 finished with value: 9.869999885559082 and parameters: {'lr': 0.47759875740593233, 'n_out_sec_lasts': 181, 'dropout_p': 0.48195118179617225, 'batch_size': 123}. Best is trial 0 with value: 87.70999908447266.
+0.2862668272135302
+Iteration: 0, Loss: 2.301115036010742, Accuracy: 12.140000343322754%
+Iteration: 429, Loss: 88.7848129272461, Accuracy: 10.039999961853027%
+Accuracy of T-shirt/Top: 8.60%
+Accuracy of Trouser: 17.60%
+Accuracy of Pullover: 0.00%
+Accuracy of Dress: 68.00%
+Accuracy of Coat: 0.00%
+Accuracy of Sandal: 1.80%
+Accuracy of Shirt: 3.00%
+Accuracy of Sneaker: 0.00%
+Accuracy of Bag: 0.00%
+Accuracy of Ankle Boot: 0.00%
+[I 2021-06-19 19:44:24,770] Trial 3 finished with value: 10.039999961853027 and parameters: {'lr': 0.2862668272135302, 'n_out_sec_lasts': 239, 'dropout_p': 0.33489742498874614, 'batch_size': 233}. Best is trial 0 with value: 87.70999908447266.
+Trial 3 finished with value: 10.039999961853027 and parameters: {'lr': 0.2862668272135302, 'n_out_sec_lasts': 239, 'dropout_p': 0.33489742498874614, 'batch_size': 233}. Best is trial 0 with value: 87.70999908447266.
+4.271722900058865e-06
+Iteration: 0, Loss: 2.316004514694214, Accuracy: 10.380000114440918%
+Iteration: 259, Loss: 1.085823893547058, Accuracy: 71.1500015258789%
+Accuracy of T-shirt/Top: 76.20%
+Accuracy of Trouser: 92.60%
+Accuracy of Pullover: 56.20%
+Accuracy of Dress: 74.20%
+Accuracy of Coat: 63.40%
+Accuracy of Sandal: 74.30%
+Accuracy of Shirt: 17.70%
+Accuracy of Sneaker: 85.00%
+Accuracy of Bag: 85.20%
+Accuracy of Ankle Boot: 93.00%
+[I 2021-06-19 19:47:35,477] Trial 4 finished with value: 71.1500015258789 and parameters: {'lr': 4.271722900058865e-06, 'n_out_sec_lasts': 104, 'dropout_p': 0.3551111634316756, 'batch_size': 385}. Best is trial 0 with value: 87.70999908447266.
+Trial 4 finished with value: 71.1500015258789 and parameters: {'lr': 4.271722900058865e-06, 'n_out_sec_lasts': 104, 'dropout_p': 0.3551111634316756, 'batch_size': 385}. Best is trial 0 with value: 87.70999908447266.
+1.4098257642647902e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 19:47:42,734] Trial 5 pruned.
+Trial 5 pruned.
+1.1443437757047597e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 19:47:49,486] Trial 6 pruned.
+Trial 6 pruned.
+8.50307827201479e-05
+Iteration: 0, Loss: 2.3563244342803955, Accuracy: 27.65999984741211%
+Iteration: 359, Loss: 0.20695637166500092, Accuracy: 89.26000213623047%
+Accuracy of T-shirt/Top: 91.60%
+Accuracy of Trouser: 97.90%
+Accuracy of Pullover: 84.60%
+Accuracy of Dress: 87.50%
+Accuracy of Coat: 79.20%
+Accuracy of Sandal: 95.90%
+Accuracy of Shirt: 68.80%
+Accuracy of Sneaker: 96.90%
+Accuracy of Bag: 97.80%
+Accuracy of Ankle Boot: 95.40%
+[I 2021-06-19 19:51:14,768] Trial 7 finished with value: 89.26000213623047 and parameters: {'lr': 8.50307827201479e-05, 'n_out_sec_lasts': 176, 'dropout_p': 0.27674627476078584, 'batch_size': 284}. Best is trial 7 with value: 89.26000213623047.
+Trial 7 finished with value: 89.26000213623047 and parameters: {'lr': 8.50307827201479e-05, 'n_out_sec_lasts': 176, 'dropout_p': 0.27674627476078584, 'batch_size': 284}. Best is trial 7 with value: 89.26000213623047.
+0.025225816253895077
+Iteration: 0, Loss: 2.3506791591644287, Accuracy: 13.9399995803833%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 19:52:08,172] Trial 8 pruned.
+Trial 8 pruned.
+0.08009274159842095
+-----------------------PRUNING-----------------------
+[I 2021-06-19 19:52:15,378] Trial 9 pruned.
+Trial 9 pruned.
+5.5159931053008614e-05
+Iteration: 0, Loss: 2.3338332176208496, Accuracy: 16.200000762939453%
+Iteration: 209, Loss: 0.33833232522010803, Accuracy: 86.20999908447266%
+Accuracy of T-shirt/Top: 86.10%
+Accuracy of Trouser: 96.20%
+Accuracy of Pullover: 80.00%
+Accuracy of Dress: 90.60%
+Accuracy of Coat: 79.80%
+Accuracy of Sandal: 95.00%
+Accuracy of Shirt: 55.60%
+Accuracy of Sneaker: 91.70%
+Accuracy of Bag: 96.40%
+Accuracy of Ankle Boot: 94.80%
+[I 2021-06-19 19:55:23,907] Trial 10 finished with value: 86.20999908447266 and parameters: {'lr': 5.5159931053008614e-05, 'n_out_sec_lasts': 125, 'dropout_p': 0.22972252275007077, 'batch_size': 477}. Best is trial 7 with value: 89.26000213623047.
+Trial 10 finished with value: 86.20999908447266 and parameters: {'lr': 5.5159931053008614e-05, 'n_out_sec_lasts': 125, 'dropout_p': 0.22972252275007077, 'batch_size': 477}. Best is trial 7 with value: 89.26000213623047.
+0.0007697184934680802
+Iteration: 0, Loss: 2.3958382606506348, Accuracy: 28.270000457763672%
+Iteration: 309, Loss: 0.21091750264167786, Accuracy: 89.08999633789062%
+Accuracy of T-shirt/Top: 85.80%
+Accuracy of Trouser: 96.70%
+Accuracy of Pullover: 85.40%
+Accuracy of Dress: 90.20%
+Accuracy of Coat: 77.50%
+Accuracy of Sandal: 97.40%
+Accuracy of Shirt: 79.00%
+Accuracy of Sneaker: 95.10%
+Accuracy of Bag: 96.50%
+Accuracy of Ankle Boot: 95.40%
+[I 2021-06-19 19:58:42,531] Trial 11 finished with value: 89.08999633789062 and parameters: {'lr': 0.0007697184934680802, 'n_out_sec_lasts': 199, 'dropout_p': 0.7932244200450417, 'batch_size': 325}. Best is trial 7 with value: 89.26000213623047.
+Trial 11 finished with value: 89.08999633789062 and parameters: {'lr': 0.0007697184934680802, 'n_out_sec_lasts': 199, 'dropout_p': 0.7932244200450417, 'batch_size': 325}. Best is trial 7 with value: 89.26000213623047.
+0.0001154261021961919
+Iteration: 0, Loss: 2.3500804901123047, Accuracy: 20.0%
+Iteration: 269, Loss: 0.31736502051353455, Accuracy: 86.25%
+Accuracy of T-shirt/Top: 81.20%
+Accuracy of Trouser: 96.40%
+Accuracy of Pullover: 75.90%
+Accuracy of Dress: 90.20%
+Accuracy of Coat: 79.20%
+Accuracy of Sandal: 94.00%
+Accuracy of Shirt: 64.80%
+Accuracy of Sneaker: 94.80%
+Accuracy of Bag: 95.60%
+Accuracy of Ankle Boot: 94.70%
+[I 2021-06-19 20:02:05,509] Trial 12 finished with value: 86.25 and parameters: {'lr': 0.0001154261021961919, 'n_out_sec_lasts': 183, 'dropout_p': 0.7988032393694541, 'batch_size': 371}. Best is trial 7 with value: 89.26000213623047.
+Trial 12 finished with value: 86.25 and parameters: {'lr': 0.0001154261021961919, 'n_out_sec_lasts': 183, 'dropout_p': 0.7988032393694541, 'batch_size': 371}. Best is trial 7 with value: 89.26000213623047.
+0.000154544881414784
+Iteration: 0, Loss: 2.494391441345215, Accuracy: 19.239999771118164%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:02:46,390] Trial 13 pruned.
+Trial 13 pruned.
+0.0011190943026560818
+Iteration: 0, Loss: 2.4097371101379395, Accuracy: 29.229999542236328%
+Iteration: 249, Loss: 0.20767153799533844, Accuracy: 88.26000213623047%
+Accuracy of T-shirt/Top: 79.20%
+Accuracy of Trouser: 99.10%
+Accuracy of Pullover: 88.00%
+Accuracy of Dress: 90.80%
+Accuracy of Coat: 79.40%
+Accuracy of Sandal: 98.90%
+Accuracy of Shirt: 78.90%
+Accuracy of Sneaker: 95.20%
+Accuracy of Bag: 98.40%
+Accuracy of Ankle Boot: 97.40%
+[I 2021-06-19 20:05:58,221] Trial 14 finished with value: 88.26000213623047 and parameters: {'lr': 0.0011190943026560818, 'n_out_sec_lasts': 142, 'dropout_p': 0.7120043600972992, 'batch_size': 403}. Best is trial 7 with value: 89.26000213623047.
+Trial 14 finished with value: 88.26000213623047 and parameters: {'lr': 0.0011190943026560818, 'n_out_sec_lasts': 142, 'dropout_p': 0.7120043600972992, 'batch_size': 403}. Best is trial 7 with value: 89.26000213623047.
+1.55463456751261e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:06:05,177] Trial 15 pruned.
+Trial 15 pruned.
+0.0004882127291895668
+Iteration: 0, Loss: 2.3955636024475098, Accuracy: 28.479999542236328%
+Iteration: 299, Loss: 0.13575032353401184, Accuracy: 92.18000030517578%
+Accuracy of T-shirt/Top: 94.00%
+Accuracy of Trouser: 99.40%
+Accuracy of Pullover: 94.40%
+Accuracy of Dress: 95.40%
+Accuracy of Coat: 67.10%
+Accuracy of Sandal: 100.00%
+Accuracy of Shirt: 81.90%
+Accuracy of Sneaker: 69.60%
+Accuracy of Bag: 95.00%
+Accuracy of Ankle Boot: 98.50%
+[I 2021-06-19 20:09:20,472] Trial 16 finished with value: 92.18000030517578 and parameters: {'lr': 0.0004882127291895668, 'n_out_sec_lasts': 224, 'dropout_p': 0.4273697695800602, 'batch_size': 337}. Best is trial 16 with value: 92.18000030517578.
+Trial 16 finished with value: 92.18000030517578 and parameters: {'lr': 0.0004882127291895668, 'n_out_sec_lasts': 224, 'dropout_p': 0.4273697695800602, 'batch_size': 337}. Best is trial 16 with value: 92.18000030517578.
+1.787157369129945e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:09:27,653] Trial 17 pruned.
+Trial 17 pruned.
+0.0004766175191322537
+Iteration: 0, Loss: 2.325779438018799, Accuracy: 33.7599983215332%
+Iteration: 419, Loss: 0.032188981771469116, Accuracy: 92.25%
+Accuracy of T-shirt/Top: 93.70%
+Accuracy of Trouser: 98.50%
+Accuracy of Pullover: 96.30%
+Accuracy of Dress: 90.70%
+Accuracy of Coat: 86.90%
+Accuracy of Sandal: 99.30%
+Accuracy of Shirt: 74.60%
+Accuracy of Sneaker: 97.60%
+Accuracy of Bag: 99.60%
+Accuracy of Ankle Boot: 99.00%
+[I 2021-06-19 20:13:13,611] Trial 18 finished with value: 92.25 and parameters: {'lr': 0.0004766175191322537, 'n_out_sec_lasts': 443, 'dropout_p': 0.4236445297318315, 'batch_size': 243}. Best is trial 18 with value: 92.25.
+Trial 18 finished with value: 92.25 and parameters: {'lr': 0.0004766175191322537, 'n_out_sec_lasts': 443, 'dropout_p': 0.4236445297318315, 'batch_size': 243}. Best is trial 18 with value: 92.25.
+0.004249679228742067
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:13:20,487] Trial 19 pruned.
+Trial 19 pruned.
+0.0005247870361796683
+Iteration: 0, Loss: 2.2793021202087402, Accuracy: 41.95000076293945%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:15:00,254] Trial 20 pruned.
+Trial 20 pruned.
+0.0002755207683605655
+Iteration: 0, Loss: 2.311326265335083, Accuracy: 32.869998931884766%
+Iteration: 299, Loss: 0.1507621705532074, Accuracy: 92.01000213623047%
+Accuracy of T-shirt/Top: 84.30%
+Accuracy of Trouser: 99.60%
+Accuracy of Pullover: 91.10%
+Accuracy of Dress: 92.90%
+Accuracy of Coat: 85.80%
+Accuracy of Sandal: 99.30%
+Accuracy of Shirt: 86.60%
+Accuracy of Sneaker: 96.50%
+Accuracy of Bag: 99.30%
+Accuracy of Ankle Boot: 98.20%
+[I 2021-06-19 20:18:42,575] Trial 21 finished with value: 92.01000213623047 and parameters: {'lr': 0.0002755207683605655, 'n_out_sec_lasts': 226, 'dropout_p': 0.408890062329109, 'batch_size': 336}. Best is trial 18 with value: 92.25.
+Trial 21 finished with value: 92.01000213623047 and parameters: {'lr': 0.0002755207683605655, 'n_out_sec_lasts': 226, 'dropout_p': 0.408890062329109, 'batch_size': 336}. Best is trial 18 with value: 92.25.
+0.003574803525667074
+Iteration: 0, Loss: 2.3394792079925537, Accuracy: 35.29999923706055%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:19:25,414] Trial 22 pruned.
+Trial 22 pruned.
+0.00032900127498399547
+Iteration: 0, Loss: 2.2808942794799805, Accuracy: 32.970001220703125%
+Iteration: 229, Loss: 0.22504061460494995, Accuracy: 92.08000183105469%
+Accuracy of T-shirt/Top: 93.70%
+Accuracy of Trouser: 98.90%
+Accuracy of Pullover: 85.90%
+Accuracy of Dress: 89.70%
+Accuracy of Coat: 51.80%
+Accuracy of Sandal: 82.40%
+Accuracy of Shirt: 89.30%
+Accuracy of Sneaker: 99.30%
+Accuracy of Bag: 98.00%
+Accuracy of Ankle Boot: 94.70%
+[I 2021-06-19 20:23:01,053] Trial 23 finished with value: 92.08000183105469 and parameters: {'lr': 0.00032900127498399547, 'n_out_sec_lasts': 295, 'dropout_p': 0.3659616840310831, 'batch_size': 441}. Best is trial 18 with value: 92.25.
+Trial 23 finished with value: 92.08000183105469 and parameters: {'lr': 0.00032900127498399547, 'n_out_sec_lasts': 295, 'dropout_p': 0.3659616840310831, 'batch_size': 441}. Best is trial 18 with value: 92.25.
+0.0013745438762859852
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:23:08,283] Trial 24 pruned.
+Trial 24 pruned.
+4.310256868891796e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:23:15,768] Trial 25 pruned.
+Trial 25 pruned.
+0.0003265663583566247
+Iteration: 0, Loss: 2.353431463241577, Accuracy: 35.9900016784668%
+Iteration: 229, Loss: 0.050498124212026596, Accuracy: 91.95999908447266%
+Accuracy of T-shirt/Top: 91.00%
+Accuracy of Trouser: 99.00%
+Accuracy of Pullover: 87.80%
+Accuracy of Dress: 95.00%
+Accuracy of Coat: 78.70%
+Accuracy of Sandal: 85.40%
+Accuracy of Shirt: 88.00%
+Accuracy of Sneaker: 96.40%
+Accuracy of Bag: 97.70%
+Accuracy of Ankle Boot: 98.60%
+[I 2021-06-19 20:27:54,479] Trial 26 finished with value: 91.95999908447266 and parameters: {'lr': 0.0003265663583566247, 'n_out_sec_lasts': 324, 'dropout_p': 0.26699868390851766, 'batch_size': 451}. Best is trial 18 with value: 92.25.
+Trial 26 finished with value: 91.95999908447266 and parameters: {'lr': 0.0003265663583566247, 'n_out_sec_lasts': 324, 'dropout_p': 0.26699868390851766, 'batch_size': 451}. Best is trial 18 with value: 92.25.
+2.301444719477848e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:28:02,820] Trial 27 pruned.
+Trial 27 pruned.
+0.0057105709679469265
+Iteration: 0, Loss: 2.3450067043304443, Accuracy: 36.63999938964844%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:28:37,015] Trial 28 pruned.
+Trial 28 pruned.
+0.009805579410249834
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:28:46,450] Trial 29 pruned.
+Trial 29 pruned.
+0.0020705199675113265
+Iteration: 0, Loss: 2.3164544105529785, Accuracy: 33.650001525878906%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:29:26,143] Trial 30 pruned.
+Trial 30 pruned.
+0.00029612992506688877
+Iteration: 0, Loss: 2.324415445327759, Accuracy: 32.189998626708984%
+Iteration: 299, Loss: 0.08743894845247269, Accuracy: 91.29000091552734%
+Accuracy of T-shirt/Top: 77.20%
+Accuracy of Trouser: 99.40%
+Accuracy of Pullover: 89.60%
+Accuracy of Dress: 92.80%
+Accuracy of Coat: 72.20%
+Accuracy of Sandal: 99.60%
+Accuracy of Shirt: 93.70%
+Accuracy of Sneaker: 96.10%
+Accuracy of Bag: 99.10%
+Accuracy of Ankle Boot: 98.10%
+[I 2021-06-19 20:33:01,282] Trial 31 finished with value: 91.29000091552734 and parameters: {'lr': 0.00029612992506688877, 'n_out_sec_lasts': 288, 'dropout_p': 0.38840338722535805, 'batch_size': 340}. Best is trial 18 with value: 92.25.
+Trial 31 finished with value: 91.29000091552734 and parameters: {'lr': 0.00029612992506688877, 'n_out_sec_lasts': 288, 'dropout_p': 0.38840338722535805, 'batch_size': 340}. Best is trial 18 with value: 92.25.
+0.00025481414691623397
+Iteration: 0, Loss: 2.334935426712036, Accuracy: 30.450000762939453%
+Iteration: 500, Loss: 0.19113095104694366, Accuracy: 93.02999877929688%
+Iteration: 529, Loss: 0.005813003983348608, Accuracy: 93.02999877929688%
+Accuracy of T-shirt/Top: 88.40%
+Accuracy of Trouser: 99.40%
+Accuracy of Pullover: 88.50%
+Accuracy of Dress: 91.60%
+Accuracy of Coat: 98.30%
+Accuracy of Sandal: 99.60%
+Accuracy of Shirt: 53.20%
+Accuracy of Sneaker: 97.00%
+Accuracy of Bag: 99.70%
+Accuracy of Ankle Boot: 99.00%
+[I 2021-06-19 20:37:08,894] Trial 32 finished with value: 93.02999877929688 and parameters: {'lr': 0.00025481414691623397, 'n_out_sec_lasts': 220, 'dropout_p': 0.4104170004751527, 'batch_size': 192}. Best is trial 32 with value: 93.02999877929688.
+Trial 32 finished with value: 93.02999877929688 and parameters: {'lr': 0.00025481414691623397, 'n_out_sec_lasts': 220, 'dropout_p': 0.4104170004751527, 'batch_size': 192}. Best is trial 32 with value: 93.02999877929688.
+0.0006641283601101042
+Iteration: 0, Loss: 2.3272852897644043, Accuracy: 35.59000015258789%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:38:11,625] Trial 33 pruned.
+Trial 33 pruned.
+0.00016262757028387745
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:38:19,310] Trial 34 pruned.
+Trial 34 pruned.
+0.0018446348672983767
+Iteration: 0, Loss: 2.3001437187194824, Accuracy: 34.56999969482422%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:38:47,874] Trial 35 pruned.
+Trial 35 pruned.
+4.265023782800809e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:38:55,319] Trial 36 pruned.
+Trial 36 pruned.
+0.00042221249453744224
+Iteration: 0, Loss: 2.325496196746826, Accuracy: 34.47999954223633%
+Iteration: 479, Loss: 0.10291901230812073, Accuracy: 91.66000366210938%
+Accuracy of T-shirt/Top: 93.10%
+Accuracy of Trouser: 99.00%
+Accuracy of Pullover: 86.20%
+Accuracy of Dress: 96.50%
+Accuracy of Coat: 95.40%
+Accuracy of Sandal: 97.30%
+Accuracy of Shirt: 84.30%
+Accuracy of Sneaker: 99.70%
+Accuracy of Bag: 99.80%
+Accuracy of Ankle Boot: 95.60%
+[I 2021-06-19 20:43:03,348] Trial 37 finished with value: 91.66000366210938 and parameters: {'lr': 0.00042221249453744224, 'n_out_sec_lasts': 342, 'dropout_p': 0.3622984453168951, 'batch_size': 210}. Best is trial 32 with value: 93.02999877929688.
+Trial 37 finished with value: 91.66000366210938 and parameters: {'lr': 0.00042221249453744224, 'n_out_sec_lasts': 342, 'dropout_p': 0.3622984453168951, 'batch_size': 210}. Best is trial 32 with value: 93.02999877929688.
+5.097853516364488e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:43:10,969] Trial 38 pruned.
+Trial 38 pruned.
+7.072539747788082e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:43:18,000] Trial 39 pruned.
+Trial 39 pruned.
+0.01593567346818954
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:43:25,207] Trial 40 pruned.
+Trial 40 pruned.
+0.00029430158093127467
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:43:32,679] Trial 41 pruned.
+Trial 41 pruned.
+0.0002009469424840212
+Iteration: 0, Loss: 2.3280446529388428, Accuracy: 37.58000183105469%
+Iteration: 339, Loss: 0.02894878387451172, Accuracy: 92.94000244140625%
+Accuracy of T-shirt/Top: 91.10%
+Accuracy of Trouser: 99.30%
+Accuracy of Pullover: 91.30%
+Accuracy of Dress: 93.30%
+Accuracy of Coat: 90.20%
+Accuracy of Sandal: 99.70%
+Accuracy of Shirt: 79.60%
+Accuracy of Sneaker: 96.30%
+Accuracy of Bag: 99.20%
+Accuracy of Ankle Boot: 97.90%
+[I 2021-06-19 20:47:16,761] Trial 42 finished with value: 92.94000244140625 and parameters: {'lr': 0.0002009469424840212, 'n_out_sec_lasts': 242, 'dropout_p': 0.33178958024605887, 'batch_size': 302}. Best is trial 32 with value: 93.02999877929688.
+Trial 42 finished with value: 92.94000244140625 and parameters: {'lr': 0.0002009469424840212, 'n_out_sec_lasts': 242, 'dropout_p': 0.33178958024605887, 'batch_size': 302}. Best is trial 32 with value: 93.02999877929688.
+8.434290740482089e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:47:24,306] Trial 43 pruned.
+Trial 43 pruned.
+0.0001742874172360033
+Iteration: 0, Loss: 2.3603932857513428, Accuracy: 34.95000076293945%
+Iteration: 339, Loss: 0.137669637799263, Accuracy: 92.1500015258789%
+Accuracy of T-shirt/Top: 87.70%
+Accuracy of Trouser: 98.90%
+Accuracy of Pullover: 93.80%
+Accuracy of Dress: 92.50%
+Accuracy of Coat: 67.30%
+Accuracy of Sandal: 99.60%
+Accuracy of Shirt: 86.50%
+Accuracy of Sneaker: 94.90%
+Accuracy of Bag: 98.30%
+Accuracy of Ankle Boot: 95.90%
+[I 2021-06-19 20:51:02,350] Trial 44 finished with value: 92.1500015258789 and parameters: {'lr': 0.0001742874172360033, 'n_out_sec_lasts': 202, 'dropout_p': 0.30351606861858704, 'batch_size': 298}. Best is trial 32 with value: 93.02999877929688.
+Trial 44 finished with value: 92.1500015258789 and parameters: {'lr': 0.0001742874172360033, 'n_out_sec_lasts': 202, 'dropout_p': 0.30351606861858704, 'batch_size': 298}. Best is trial 32 with value: 93.02999877929688.
+0.00016778804251207292
+Iteration: 0, Loss: 2.3239033222198486, Accuracy: 33.88999938964844%
+Iteration: 329, Loss: 0.1499354988336563, Accuracy: 92.16000366210938%
+Accuracy of T-shirt/Top: 90.40%
+Accuracy of Trouser: 99.30%
+Accuracy of Pullover: 92.30%
+Accuracy of Dress: 89.20%
+Accuracy of Coat: 79.20%
+Accuracy of Sandal: 99.40%
+Accuracy of Shirt: 84.30%
+Accuracy of Sneaker: 95.60%
+Accuracy of Bag: 98.20%
+Accuracy of Ankle Boot: 97.00%
+[I 2021-06-19 20:54:45,096] Trial 45 finished with value: 92.16000366210938 and parameters: {'lr': 0.00016778804251207292, 'n_out_sec_lasts': 169, 'dropout_p': 0.29829119666838355, 'batch_size': 304}. Best is trial 32 with value: 93.02999877929688.
+Trial 45 finished with value: 92.16000366210938 and parameters: {'lr': 0.00016778804251207292, 'n_out_sec_lasts': 169, 'dropout_p': 0.29829119666838355, 'batch_size': 304}. Best is trial 32 with value: 93.02999877929688.
+0.0008723905188984782
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:54:52,673] Trial 46 pruned.
+Trial 46 pruned.
+2.9039831961643126e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:55:00,182] Trial 47 pruned.
+Trial 47 pruned.
+7.874704775509293e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:55:08,125] Trial 48 pruned.
+Trial 48 pruned.
+0.00014359776068213772
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:55:15,675] Trial 49 pruned.
+Trial 49 pruned.
+0.0009173712122653235
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:55:23,281] Trial 50 pruned.
+Trial 50 pruned.
+0.00014457934833716511
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:55:30,914] Trial 51 pruned.
+Trial 51 pruned.
+0.00020596834849266997
+Iteration: 0, Loss: 2.3386478424072266, Accuracy: 30.739999771118164%
+Iteration: 409, Loss: 0.10133901983499527, Accuracy: 93.62999725341797%
+Accuracy of T-shirt/Top: 94.10%
+Accuracy of Trouser: 99.30%
+Accuracy of Pullover: 90.10%
+Accuracy of Dress: 85.40%
+Accuracy of Coat: 98.60%
+Accuracy of Sandal: 99.70%
+Accuracy of Shirt: 65.30%
+Accuracy of Sneaker: 97.60%
+Accuracy of Bag: 97.90%
+Accuracy of Ankle Boot: 98.20%
+[I 2021-06-19 20:59:20,973] Trial 52 finished with value: 93.62999725341797 and parameters: {'lr': 0.00020596834849266997, 'n_out_sec_lasts': 192, 'dropout_p': 0.2055786239054888, 'batch_size': 246}. Best is trial 52 with value: 93.62999725341797.
+Trial 52 finished with value: 93.62999725341797 and parameters: {'lr': 0.00020596834849266997, 'n_out_sec_lasts': 192, 'dropout_p': 0.2055786239054888, 'batch_size': 246}. Best is trial 52 with value: 93.62999725341797.
+0.0006213469282514384
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:59:28,791] Trial 53 pruned.
+Trial 53 pruned.
+7.281138468500433e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:59:36,129] Trial 54 pruned.
+Trial 54 pruned.
+1.0298663194100513e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:59:43,658] Trial 55 pruned.
+Trial 55 pruned.
+0.0002107145267876025
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:59:51,222] Trial 56 pruned.
+Trial 56 pruned.
+3.9633279848141735e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 20:59:58,754] Trial 57 pruned.
+Trial 57 pruned.
+0.0016609907260988026
+Iteration: 0, Loss: 2.3167080879211426, Accuracy: 33.939998626708984%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 21:00:29,760] Trial 58 pruned.
+Trial 58 pruned.
+0.9375525984482178
+-----------------------PRUNING-----------------------
+[I 2021-06-19 21:00:36,961] Trial 59 pruned.
+Trial 59 pruned.
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+(base) C:\Users\thord\OneDrive\DTU\Spring 2021\Machine Learning Operations\dtu_mlops-main\09_crossvalidation_at_scale>python fashion_trainer.py
+Using median pruning
+[I 2021-06-19 14:56:37,513] A new study created in memory with name: no-name-3b9cbe7b-8dc0-4253-9c7c-cf8fb5f05da9
+A new study created in memory with name: no-name-3b9cbe7b-8dc0-4253-9c7c-cf8fb5f05da9
+0.010251092889678789
+Iteration: 0, Loss: 2.3775179386138916, Accuracy: 19.6200008392334%
+Iteration: 219, Loss: 0.23230810463428497, Accuracy: 80.37999725341797%
+Accuracy of T-shirt/Top: 75.60%
+Accuracy of Trouser: 97.80%
+Accuracy of Pullover: 52.00%
+Accuracy of Dress: 85.30%
+Accuracy of Coat: 76.70%
+Accuracy of Sandal: 95.40%
+Accuracy of Shirt: 47.10%
+Accuracy of Sneaker: 87.60%
+Accuracy of Bag: 96.50%
+Accuracy of Ankle Boot: 94.70%
+[I 2021-06-19 15:00:10,572] Trial 0 finished with value: 80.37999725341797 and parameters: {'lr': 0.010251092889678789, 'n_out_sec_lasts': 164, 'dropout_p': 0.7960449448576976, 'batch_size': 475}. Best is trial 0 with value: 80.37999725341797.
+Trial 0 finished with value: 80.37999725341797 and parameters: {'lr': 0.010251092889678789, 'n_out_sec_lasts': 164, 'dropout_p': 0.7960449448576976, 'batch_size': 475}. Best is trial 0 with value: 80.37999725341797.
+0.011116056652617803
+Iteration: 0, Loss: 2.3226430416107178, Accuracy: 18.75%
+Iteration: 339, Loss: 0.34571704268455505, Accuracy: 83.20999908447266%
+Accuracy of T-shirt/Top: 79.90%
+Accuracy of Trouser: 97.80%
+Accuracy of Pullover: 84.60%
+Accuracy of Dress: 90.20%
+Accuracy of Coat: 68.80%
+Accuracy of Sandal: 98.60%
+Accuracy of Shirt: 53.70%
+Accuracy of Sneaker: 86.00%
+Accuracy of Bag: 93.80%
+Accuracy of Ankle Boot: 95.10%
+[I 2021-06-19 15:04:04,935] Trial 1 finished with value: 83.20999908447266 and parameters: {'lr': 0.011116056652617803, 'n_out_sec_lasts': 330, 'dropout_p': 0.3004224412651018, 'batch_size': 299}. Best is trial 1 with value: 83.20999908447266.
+Trial 1 finished with value: 83.20999908447266 and parameters: {'lr': 0.011116056652617803, 'n_out_sec_lasts': 330, 'dropout_p': 0.3004224412651018, 'batch_size': 299}. Best is trial 1 with value: 83.20999908447266.
+0.002411686942599606
+Iteration: 0, Loss: 2.318065643310547, Accuracy: 41.31999969482422%
+Iteration: 249, Loss: 0.13062745332717896, Accuracy: 87.66999816894531%
+Accuracy of T-shirt/Top: 78.40%
+Accuracy of Trouser: 98.40%
+Accuracy of Pullover: 90.80%
+Accuracy of Dress: 93.20%
+Accuracy of Coat: 60.20%
+Accuracy of Sandal: 99.20%
+Accuracy of Shirt: 82.90%
+Accuracy of Sneaker: 85.80%
+Accuracy of Bag: 96.70%
+Accuracy of Ankle Boot: 97.90%
+[I 2021-06-19 15:07:25,868] Trial 2 finished with value: 87.66999816894531 and parameters: {'lr': 0.002411686942599606, 'n_out_sec_lasts': 173, 'dropout_p': 0.508402990823329, 'batch_size': 412}. Best is trial 2 with value: 87.66999816894531.
+Trial 2 finished with value: 87.66999816894531 and parameters: {'lr': 0.002411686942599606, 'n_out_sec_lasts': 173, 'dropout_p': 0.508402990823329, 'batch_size': 412}. Best is trial 2 with value: 87.66999816894531.
+0.00013783907061624569
+Iteration: 0, Loss: 2.383491277694702, Accuracy: 24.8799991607666%
+Iteration: 269, Loss: 0.01949620246887207, Accuracy: 89.33999633789062%
+Accuracy of T-shirt/Top: 86.20%
+Accuracy of Trouser: 97.60%
+Accuracy of Pullover: 76.90%
+Accuracy of Dress: 89.50%
+Accuracy of Coat: 82.40%
+Accuracy of Sandal: 95.60%
+Accuracy of Shirt: 79.70%
+Accuracy of Sneaker: 97.30%
+Accuracy of Bag: 97.40%
+Accuracy of Ankle Boot: 94.50%
+[I 2021-06-19 15:10:47,470] Trial 3 finished with value: 89.33999633789062 and parameters: {'lr': 0.00013783907061624569, 'n_out_sec_lasts': 133, 'dropout_p': 0.4973093982188568, 'batch_size': 384}. Best is trial 3 with value: 89.33999633789062.
+Trial 3 finished with value: 89.33999633789062 and parameters: {'lr': 0.00013783907061624569, 'n_out_sec_lasts': 133, 'dropout_p': 0.4973093982188568, 'batch_size': 384}. Best is trial 3 with value: 89.33999633789062.
+0.0007446469500742184
+Iteration: 0, Loss: 2.366933822631836, Accuracy: 37.619998931884766%
+Iteration: 209, Loss: 0.1999160796403885, Accuracy: 92.25%
+Accuracy of T-shirt/Top: 81.20%
+Accuracy of Trouser: 99.40%
+Accuracy of Pullover: 86.20%
+Accuracy of Dress: 77.50%
+Accuracy of Coat: 79.20%
+Accuracy of Sandal: 98.20%
+Accuracy of Shirt: 92.30%
+Accuracy of Sneaker: 97.40%
+Accuracy of Bag: 98.60%
+Accuracy of Ankle Boot: 97.80%
+[I 2021-06-19 15:13:59,638] Trial 4 finished with value: 92.25 and parameters: {'lr': 0.0007446469500742184, 'n_out_sec_lasts': 426, 'dropout_p': 0.5002589172464895, 'batch_size': 483}. Best is trial 4 with value: 92.25.
+Trial 4 finished with value: 92.25 and parameters: {'lr': 0.0007446469500742184, 'n_out_sec_lasts': 426, 'dropout_p': 0.5002589172464895, 'batch_size': 483}. Best is trial 4 with value: 92.25.
+2.0915076911120797e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:14:06,616] Trial 5 pruned.
+Trial 5 pruned.
+0.00011650467614934419
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:14:13,993] Trial 6 pruned.
+Trial 6 pruned.
+3.836513776342018e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:14:20,902] Trial 7 pruned.
+Trial 7 pruned.
+1.4227520662971182e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:14:28,170] Trial 8 pruned.
+Trial 8 pruned.
+0.24641262390069962
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:14:35,545] Trial 9 pruned.
+Trial 9 pruned.
+0.921966846677262
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:14:42,909] Trial 10 pruned.
+Trial 10 pruned.
+0.0002614629951560909
+Iteration: 0, Loss: 2.355175495147705, Accuracy: 25.030000686645508%
+Iteration: 269, Loss: 0.09062977880239487, Accuracy: 93.25%
+Accuracy of T-shirt/Top: 87.90%
+Accuracy of Trouser: 99.60%
+Accuracy of Pullover: 90.70%
+Accuracy of Dress: 90.40%
+Accuracy of Coat: 74.20%
+Accuracy of Sandal: 99.10%
+Accuracy of Shirt: 89.30%
+Accuracy of Sneaker: 96.50%
+Accuracy of Bag: 99.20%
+Accuracy of Ankle Boot: 97.20%
+[I 2021-06-19 15:18:05,326] Trial 11 finished with value: 93.25 and parameters: {'lr': 0.0002614629951560909, 'n_out_sec_lasts': 499, 'dropout_p': 0.4337304964272929, 'batch_size': 380}. Best is trial 11 with value: 93.25.
+Trial 11 finished with value: 93.25 and parameters: {'lr': 0.0002614629951560909, 'n_out_sec_lasts': 499, 'dropout_p': 0.4337304964272929, 'batch_size': 380}. Best is trial 11 with value: 93.25.
+0.0003187476596923349
+Iteration: 0, Loss: 2.338191270828247, Accuracy: 26.110000610351562%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:18:23,761] Trial 12 pruned.
+Trial 12 pruned.
+0.0015869747604658477
+Iteration: 0, Loss: 2.321549654006958, Accuracy: 29.920000076293945%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:19:16,705] Trial 13 pruned.
+Trial 13 pruned.
+2.6386595122291776e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:19:28,858] Trial 14 pruned.
+Trial 14 pruned.
+0.012471800037448109
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:19:40,092] Trial 15 pruned.
+Trial 15 pruned.
+0.05647671114596271
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:19:55,090] Trial 16 pruned.
+Trial 16 pruned.
+0.0004769298830306737
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:20:05,058] Trial 17 pruned.
+Trial 17 pruned.
+3.358399647089305e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:20:14,081] Trial 18 pruned.
+Trial 18 pruned.
+0.0025278800812057636
+Iteration: 0, Loss: 2.3140151500701904, Accuracy: 33.04999923706055%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:21:15,706] Trial 19 pruned.
+Trial 19 pruned.
+8.844091444190086e-05
+Iteration: 0, Loss: 2.347243547439575, Accuracy: 26.239999771118164%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:22:02,696] Trial 20 pruned.
+Trial 20 pruned.
+0.00033012830104717174
+Iteration: 0, Loss: 2.3290793895721436, Accuracy: 42.0099983215332%
+Iteration: 259, Loss: 0.1618507206439972, Accuracy: 91.94999694824219%
+Accuracy of T-shirt/Top: 90.40%
+Accuracy of Trouser: 99.50%
+Accuracy of Pullover: 91.30%
+Accuracy of Dress: 87.00%
+Accuracy of Coat: 90.70%
+Accuracy of Sandal: 99.90%
+Accuracy of Shirt: 76.10%
+Accuracy of Sneaker: 97.10%
+Accuracy of Bag: 98.20%
+Accuracy of Ankle Boot: 93.30%
+[I 2021-06-19 15:26:14,999] Trial 21 finished with value: 91.94999694824219 and parameters: {'lr': 0.00033012830104717174, 'n_out_sec_lasts': 100, 'dropout_p': 0.46550406475608946, 'batch_size': 385}. Best is trial 11 with value: 93.25.
+Trial 21 finished with value: 91.94999694824219 and parameters: {'lr': 0.00033012830104717174, 'n_out_sec_lasts': 100, 'dropout_p': 0.46550406475608946, 'batch_size': 385}. Best is trial 11 with value: 93.25.
+0.00053242452221607
+Iteration: 0, Loss: 2.3560903072357178, Accuracy: 30.34000015258789%
+Iteration: 219, Loss: 0.12309931963682175, Accuracy: 92.12999725341797%
+Accuracy of T-shirt/Top: 92.90%
+Accuracy of Trouser: 99.60%
+Accuracy of Pullover: 95.50%
+Accuracy of Dress: 88.30%
+Accuracy of Coat: 83.10%
+Accuracy of Sandal: 99.40%
+Accuracy of Shirt: 72.40%
+Accuracy of Sneaker: 99.10%
+Accuracy of Bag: 97.70%
+Accuracy of Ankle Boot: 89.70%
+[I 2021-06-19 15:30:28,091] Trial 22 finished with value: 92.12999725341797 and parameters: {'lr': 0.00053242452221607, 'n_out_sec_lasts': 215, 'dropout_p': 0.46041817149101794, 'batch_size': 469}. Best is trial 11 with value: 93.25.
+Trial 22 finished with value: 92.12999725341797 and parameters: {'lr': 0.00053242452221607, 'n_out_sec_lasts': 215, 'dropout_p': 0.46041817149101794, 'batch_size': 469}. Best is trial 11 with value: 93.25.
+0.0007787743388427359
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:30:37,489] Trial 23 pruned.
+Trial 23 pruned.
+0.005967863597951311
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:30:51,815] Trial 24 pruned.
+Trial 24 pruned.
+9.399270917119324e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:31:07,041] Trial 25 pruned.
+Trial 25 pruned.
+5.210168485414409e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:31:25,591] Trial 26 pruned.
+Trial 26 pruned.
+0.00021440356985382496
+Iteration: 0, Loss: 2.3231263160705566, Accuracy: 37.0%
+Iteration: 219, Loss: 0.21134237945079803, Accuracy: 90.19999694824219%
+Accuracy of T-shirt/Top: 93.80%
+Accuracy of Trouser: 98.50%
+Accuracy of Pullover: 79.90%
+Accuracy of Dress: 90.40%
+Accuracy of Coat: 79.30%
+Accuracy of Sandal: 96.20%
+Accuracy of Shirt: 75.50%
+Accuracy of Sneaker: 97.80%
+Accuracy of Bag: 97.70%
+Accuracy of Ankle Boot: 95.70%
+[I 2021-06-19 15:35:55,415] Trial 27 finished with value: 90.19999694824219 and parameters: {'lr': 0.00021440356985382496, 'n_out_sec_lasts': 329, 'dropout_p': 0.4734434695849059, 'batch_size': 458}. Best is trial 11 with value: 93.25.
+Trial 27 finished with value: 90.19999694824219 and parameters: {'lr': 0.00021440356985382496, 'n_out_sec_lasts': 329, 'dropout_p': 0.4734434695849059, 'batch_size': 458}. Best is trial 11 with value: 93.25.
+0.0007152317258078522
+Iteration: 0, Loss: 2.3133089542388916, Accuracy: 37.81999969482422%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:39:26,036] Trial 28 pruned.
+Trial 28 pruned.
+0.02214024616122712
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:39:37,472] Trial 29 pruned.
+Trial 29 pruned.
+0.002352488872599616
+Iteration: 0, Loss: 2.2627193927764893, Accuracy: 44.2400016784668%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:41:37,785] Trial 30 pruned.
+Trial 30 pruned.
+0.0003603517712196369
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:41:48,179] Trial 31 pruned.
+Trial 31 pruned.
+0.004598740977529345
+Iteration: 0, Loss: 2.349215507507324, Accuracy: 32.040000915527344%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:42:38,705] Trial 32 pruned.
+Trial 32 pruned.
+0.0012851732679300184
+Iteration: 0, Loss: 2.368016242980957, Accuracy: 45.349998474121094%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:43:34,806] Trial 33 pruned.
+Trial 33 pruned.
+0.00019896048095734226
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:44:17,918] Trial 34 pruned.
+Trial 34 pruned.
+6.226877555098965e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:44:32,467] Trial 35 pruned.
+Trial 35 pruned.
+0.0006329789592421641
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:44:43,864] Trial 36 pruned.
+Trial 36 pruned.
+0.00014585414964028386
+Iteration: 0, Loss: 2.31107497215271, Accuracy: 33.939998626708984%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:46:33,874] Trial 37 pruned.
+Trial 37 pruned.
+0.003933468634387967
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:48:15,065] Trial 38 pruned.
+Trial 38 pruned.
+0.00025478887173721343
+Iteration: 0, Loss: 2.3479387760162354, Accuracy: 33.619998931884766%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:51:01,019] Trial 39 pruned.
+Trial 39 pruned.
+0.0012500579929627014
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:51:12,403] Trial 40 pruned.
+Trial 40 pruned.
+0.0001509660649496789
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:51:21,694] Trial 41 pruned.
+Trial 41 pruned.
+0.00045667346501770115
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:51:31,225] Trial 42 pruned.
+Trial 42 pruned.
+2.094055619883308e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:51:41,560] Trial 43 pruned.
+Trial 43 pruned.
+7.882227772405774e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:51:52,481] Trial 44 pruned.
+Trial 44 pruned.
+5.976134624236024e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:52:03,623] Trial 45 pruned.
+Trial 45 pruned.
+0.0003003365970019098
+Iteration: 0, Loss: 2.328800916671753, Accuracy: 30.799999237060547%
+Iteration: 249, Loss: 0.07816138863563538, Accuracy: 92.02999877929688%
+Accuracy of T-shirt/Top: 88.40%
+Accuracy of Trouser: 99.20%
+Accuracy of Pullover: 89.70%
+Accuracy of Dress: 89.90%
+Accuracy of Coat: 91.00%
+Accuracy of Sandal: 98.90%
+Accuracy of Shirt: 85.70%
+Accuracy of Sneaker: 97.00%
+Accuracy of Bag: 99.30%
+Accuracy of Ankle Boot: 97.10%
+[I 2021-06-19 15:56:27,271] Trial 46 finished with value: 92.02999877929688 and parameters: {'lr': 0.0003003365970019098, 'n_out_sec_lasts': 412, 'dropout_p': 0.4350398919485715, 'batch_size': 409}. Best is trial 11 with value: 93.25.
+Trial 46 finished with value: 92.02999877929688 and parameters: {'lr': 0.0003003365970019098, 'n_out_sec_lasts': 412, 'dropout_p': 0.4350398919485715, 'batch_size': 409}. Best is trial 11 with value: 93.25.
+0.000906502824366784
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:56:35,605] Trial 47 pruned.
+Trial 47 pruned.
+0.0020977241354773017
+Iteration: 0, Loss: 2.2976067066192627, Accuracy: 40.90999984741211%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:57:36,297] Trial 48 pruned.
+Trial 48 pruned.
+4.197795032940632e-05
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:57:45,587] Trial 49 pruned.
+Trial 49 pruned.
+0.00035744277513587516
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:57:54,100] Trial 50 pruned.
+Trial 50 pruned.
+0.00021019510582768178
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:58:03,114] Trial 51 pruned.
+Trial 51 pruned.
+0.00010155006384690876
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:58:12,321] Trial 52 pruned.
+Trial 52 pruned.
+0.00029573859852572945
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:58:21,544] Trial 53 pruned.
+Trial 53 pruned.
+0.0004983512938534496
+Iteration: 0, Loss: 2.3192694187164307, Accuracy: 40.189998626708984%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 15:59:41,388] Trial 54 pruned.
+Trial 54 pruned.
+0.00012072541719454992
+Iteration: 0, Loss: 2.3282058238983154, Accuracy: 33.310001373291016%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 16:00:34,228] Trial 55 pruned.
+Trial 55 pruned.
+0.0011630881186692678
+-----------------------PRUNING-----------------------
+[I 2021-06-19 16:00:46,562] Trial 56 pruned.
+Trial 56 pruned.
+0.00019674260717208314
+Iteration: 0, Loss: 2.295184373855591, Accuracy: 32.7400016784668%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 16:02:07,188] Trial 57 pruned.
+Trial 57 pruned.
+1.2528352027470165e-06
+-----------------------PRUNING-----------------------
+[I 2021-06-19 16:02:15,279] Trial 58 pruned.
+Trial 58 pruned.
+0.008258868423199098
+Iteration: 0, Loss: 2.330559015274048, Accuracy: 35.939998626708984%
+-----------------------PRUNING-----------------------
+[I 2021-06-19 16:03:24,320] Trial 59 pruned.
+Trial 59 pruned.
